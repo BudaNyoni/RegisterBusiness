@@ -1,13 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
+import { NextPageComponent } from './next-page/next-page.component';
+
+const appRoutes: Routes = [
+  { path: 'crisis-center', component: NextPageComponent },
+];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NextPageComponent
   ],
   imports: [
+    RouterModule.forRoot(appRoutes),
     BrowserModule
   ],
   providers: [],

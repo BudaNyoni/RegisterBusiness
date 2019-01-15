@@ -86,7 +86,7 @@ input::placeholder{
 }
 button{
     padding: 1em;
-    width: 30em;
+    // width: 30em;
     font-size: 1em;
     background-color:rgba(2, 197, 2, 0.692);
     border: none;
@@ -94,7 +94,12 @@ button{
     // border-radius: 10px;
 }
 }
-
+nav{
+    // padding-right: 10px;
+    a{
+        padding-left: 10px;
+    }
+}
 .navb{
     display: flex;
     padding: 5px;

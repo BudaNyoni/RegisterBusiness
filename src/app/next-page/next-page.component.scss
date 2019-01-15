@@ -1,0 +1,22 @@
+ul{
+   position: fixed;
+   top: 50em; 
+   left: 0;
+   margin: 0;
+   padding: 0;
+   z-index: 1;
+}
+ul,li{
+    list-style: none;
+}
+
+#slider{
+    width: 80em;
+    height: 80em;
+}
+
+#slider div{
+    position: relative;
+    height: 100em;
+    width: 100em;
+}
