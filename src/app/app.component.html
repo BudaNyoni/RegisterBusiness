@@ -1,26 +1,78 @@
+
+
 <body>
+  <div class="navb">
+    <div class="logo">
+    <img src="../assets/log.png" alt="">
+    <i><h1>GasRadar</h1></i>
+  </div>
+  </div>
   <div class="container">
 
     <div class="left">
-    <h1>GasRadar</h1>
+        <div class="logs">
+            <img src="../assets/log.png" alt="">
+          </div>
+   <i><h1>GasRadar</h1></i>
+   
     <!-- <input type="text" placeholder="Business Name"> -->
     </div>
 
-    <div class="right">
+    <div class="slider">
     <h2>Business Form</h2>
+<div id="slide">
+    <input type="text" placeholder="Business Name"> <br>
+    <input type="text" placeholder="Owner Name"> <br>
+    <input type="text" placeholder="Business Address"> <br>
+    <input type="text" placeholder="Business E-mail"> <br>
+    <input type="text" placeholder="Business Tel">
 
+    <div class="butt">
+        <button class="btn" type="submit"  >next</button>
+     </div>
+</div>
+      
+      <!-- <div id="slide">
       <input type="text" placeholder="Business Name"> <br>
-      <input type="text" placeholder="Business Name"> <br>
-      <input type="text" placeholder="Business Name"> <br>
-      <input type="text" placeholder="Business Name"> <br>
-      <input type="text" placeholder="Business Name">
+      <input type="text" placeholder="Owner Name"> <br>
+      <input type="text" placeholder="Business Address"> <br>
+      <input type="text" placeholder="Business E-mail"> <br>
+      <input type="text" placeholder="Business Tel">
+      </div>
 
 <div class="butt">
-   <button class="btn" type="submit" >Register</button>
-</div>
+   <button class="btn" type="submit" onclick="plusDivs(+1)" >back</button>
+</div> -->
      
     </div>
 
   </div>
+<script>
+  var index = 1;
+
+  function plusIndex(n){
+    index=index + n;
+    showcontent (index);
+  }
+
+  showcontent(1);
+
+function showcontent(n){
+  var i;
+  var x = document.getElementsByClassName("slide");
+  if(n > x.length){index = 1};
+  if(n < 1 ){index = x.length};
+  for(i=0;i<x.length;i++){
+    x[i].style.display = "none"; 
+  }
+  x[index-1].style.display = block;
+}
+
+function autocontent(){
+  alert("Nyoni");
+  setTimeout(autocontent,2000);
+}
+
+</script>
 </body>
 
