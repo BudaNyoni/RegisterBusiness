@@ -5,7 +5,8 @@ import { AppComponent } from './app.component';
 import { NextPageComponent } from './next-page/next-page.component';
 
 const appRoutes: Routes = [
-  { path: 'crisis-center', component: NextPageComponent },
+  { path: 'app', component: AppComponent },
+  { path: 'nextpage', component: NextPageComponent },
 ];
 
 @NgModule({

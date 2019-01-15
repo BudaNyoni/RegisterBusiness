@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+// import { AppComponent } from '../app.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-next-page',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NextPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(public router:Router) { }
 
   ngOnInit() {
   }

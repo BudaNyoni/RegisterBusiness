@@ -11,12 +11,27 @@ ul,li{
 }
 
 #slider{
-    width: 80em;
-    height: 80em;
-}
+    width: 100em;
+    height: 50em;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
 
-#slider div{
+   
+}
+#slider,#red{
+    background-color: red;
+}
+#slider,#blue{
+    background-color: blue;
+}
+#slider,div{
     position: relative;
     height: 100em;
-    width: 100em;
+    width: 160em;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: whitesmoke;
+    // font-size: 2em;
 }
+
