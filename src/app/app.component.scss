@@ -7,18 +7,19 @@ $primary-text-color:   #212121;
 $secondary-text-color: #757575;
 $divider-color:        #BDBDBD;
 .main{
-    text-align: center;
+    // text-align: center;
     .butts{
         position: relative;
        margin-top: -100px;
-        margin-left: 180px;
+        margin-left: 580px;
     }
     .btn{
-        width: 65em;
+        width: 40em;
         padding: 1em;
         border: none;
         color: white;
-        background-color: rgba(0, 155, 0, 0.692);
+        font-size: 1em;
+        background-color: $accent-color;
     }
 }
 .container{ 
@@ -41,7 +42,7 @@ position: relative;
 #slide{
     h2{
         text-align: center;
-        color: $accent-color;
+        color: #1976D2;
        
     }
     .inp{
@@ -56,7 +57,7 @@ position: relative;
         font-size: 1.1em;
         font-weight: 800;
         /* text-align: center; */
-        border-bottom: 2px solid #1976D2;
+        border-bottom: 2px solid #FFC107;
         width: 18em;
         margin:25px 0 40px 30px;
         padding: 10px 0 10px 0;
@@ -69,7 +70,7 @@ position: relative;
         padding: 30px 0 0 0;
         font-size: 17px;
         font-weight: 650;
-        color: #1976D2;
+        color: $accent-color;
         pointer-events: none;
         transition: .3s;
     }
@@ -78,7 +79,7 @@ position: relative;
     .inp input:valid ~ label{
         top: -18px;
         left: 30px;
-        color: $accent-color;
+        color: #1976D2;
         font-size: 12px;
     }
 
@@ -116,7 +117,7 @@ position: relative;
     margin: -17.5px -10px 0 150px;    
     padding: 1em;
     h2{
-        color: $accent-color;
+        color: #1976D2;
     }
     .inp{
         position: relative;
@@ -126,11 +127,11 @@ position: relative;
             background-color: rgba(0, 0, 0, 0);
             border: none;
             outline: none;
-            letter-spacing: 12px;
+            letter-spacing: 1px;
             font-size: 1.1em;
             font-weight: 800;
             /* text-align: center; */
-            border-bottom: 2px solid #1976D2;
+            border-bottom: 2px solid #FFC107;
             width: 18em;
             margin:25px 0 40px 30px;
             padding: 10px 0 10px 0;
@@ -143,7 +144,7 @@ position: relative;
             padding: 30px 0 0 0;
             font-size: 17px;
             font-weight: 650;
-            color: #1976D2;
+            color: $accent-color;
             pointer-events: none;
             transition: .3s;
         }
@@ -152,7 +153,7 @@ position: relative;
         .inp input:valid ~ label{
             top: -18px;
             left: 30px;
-            color: $accent-color;
+            color: #1976D2;
             font-size: 12px;
         }
         .int input:hover{
@@ -165,7 +166,7 @@ position: relative;
     }  
  }
  .combo{
-     margin: 40px 0 0 10px;
+     margin: 50px 0 0 40px;
      .business{
         font-weight: 650;
         font-size: 1.1em;
@@ -173,13 +174,17 @@ position: relative;
 
     .selects{
         color: #FFC107;
-        width: 12em;
+        width: 12.3em;
         padding: 10px;
         border: none;
         font-weight: 650;
         font-size: 1.1em;
 
         // margin-left: 30px;
+    }
+    option{
+        font-weight: 650;
+        font-size: 1.3em; 
     }
  }
 
@@ -212,7 +217,7 @@ position: relative;
 .left{
     // background-image:linear-gradient(rgba(black,.9),rgba(49, 19, 19, 0)), url("../assets/6fc4299dfa18327fee201fade0fee731.jpg");
     width: 24em;
-    background-image:linear-gradient(rgba(#2196F3,3),rgba(grey,.2));
+    background-image:linear-gradient(rgba(#2196F3,5),rgba(grey,.9)),url('../assets/6fc4299dfa18327fee201fade0fee731.jpg');
     height: 45em;
     .logs{
         // margin: 10px auto;
