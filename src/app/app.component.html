@@ -1,17 +1,21 @@
-
+<!-- 
 <nav class="navb">
   <a routerLink="/app" routerLinkActive="active">Home/App</a>
   <a routerLink="/nextpage" routerLinkActive="active">NextPage</a>
 </nav>
-<router-outlet></router-outlet>
+<router-outlet></router-outlet> -->
 
 <body>
+
+
   <div class="navb">
     <div class="logo">
     <img src="../assets/log.png" alt="">
     <i><h1>GasRadar</h1></i>
   </div>
   </div>
+
+
   <div class="container">
 
     <div class="left">
@@ -23,61 +27,70 @@
     <!-- <input type="text" placeholder="Business Name"> -->
     </div>
 
+
+
     <div class="slider">
     <h2>Business Form</h2>
 <div id="slide">
-    <input type="text" placeholder="Business Name"> <br>
-    <input type="text" placeholder="Owner Name"> <br>
-    <input type="text" placeholder="Business Address"> <br>
-    <input type="text" placeholder="Business E-mail"> <br>
-    <input type="text" placeholder="Business Tel">
-
-    <div class="butt">
-        <button class="btn" type="submit"  >next</button>
-     </div>
-</div>
-      
-      <!-- <div id="slide">
-      <input type="text" placeholder="Business Name"> <br>
-      <input type="text" placeholder="Owner Name"> <br>
-      <input type="text" placeholder="Business Address"> <br>
-      <input type="text" placeholder="Business E-mail"> <br>
-      <input type="text" placeholder="Business Tel">
-      </div>
-
-<div class="butt">
-   <button class="btn" type="submit" onclick="plusDivs(+1)" >back</button>
-</div> -->
-     
-    </div>
-
+  <div class="inp">
+    <input type="text" required=""> 
+    <label for="">Business Name</label>
   </div>
-<!-- <script>
-  var index = 1;
+    <div class="inp">
+      <input type="text" required=""> 
+      <label for="">Owner Name</label>
+    </div>
+   <div class="inp">
+      <input type="text" required="" >
+      <label for="">Business Address</label>
+   </div>
+     <br>
+     <div class="inp">
+        <input type="text"  required="">
+        <label for="">Business E-mail</label> 
+     </div>
+  <div class="inp" >
+      <input type="text" required="" >
+      <label for="">Business Tel</label>
+  </div>
+ 
+</div>
+    
+    </div>
+    
+    
+      <div id="slide1">
+          <h2>Products</h2>
+          <div class="inp">
+          <input type="text" required="">
+          <label for="">LPG Price</label>
+        </div>
+        <div class="inp">
+            <input type="text"required="">
+            <label for="">Petrol 95 Price</label>
+        </div>
+         <div class="inp">
+              <input type="text" required=""> 
+              <label for="">Petrol 93 Price</label>
+         </div>
+         <div class="inp">
+            <input type="text" required=""> 
+                <label for="">Diesel</label>
+          </div>
+         
+          <div class="combo">
+          <label class="business" for="business">Shop Type: </label>
+          <select class="selects" value="none" placeholder="business" >
+              <option value="spaza">Spaza</option>
+              <option value="supermarket">Supermarket</option>
+              <option value="garage">Garage</option>
+            </select>
+          </div>
+      </div>
+      <!-- <div class="butt">
+          <button class="btn" type="submit"  >next</button>
+       </div> -->
+  </div>
 
-  function plusIndex(n){
-    index=index + n;
-    showcontent (index);
-  }
-
-  showcontent(1);
-
-function showcontent(n){
-  var i;
-  var x = document.getElementsByClassName("slide");
-  if(n > x.length){index = 1};
-  if(n < 1 ){index = x.length};
-  for(i=0;i<x.length;i++){
-    x[i].style.display = "none"; 
-  }
-  x[index-1].style.display = block;
-}
-
-function autocontent(){
-  alert("Nyoni");
-  setTimeout(autocontent,2000);
-}
-
-</script> -->
 </body>
 
