@@ -11,15 +11,18 @@ $divider-color:        #BDBDBD;
     .butts{
         position: relative;
        margin-top: -100px;
-        margin-left: 580px;
+        margin-left: 480px;
     }
     .btn{
         width: 40em;
-        padding: 1em;
+        padding: .8em;
         border: none;
-        color: white;
-        font-size: 1em;
-        background-color: $accent-color;
+        // text-shadow: 1px 3px 10px ;
+        color: $accent-color;
+        font-size: 1.1em;
+        font-weight: 600;
+        background-image:linear-gradient(#2196F3,rgba(grey,1));
+        box-shadow: 5px 13px 8px rgba(grey,.2);
     }
 }
 .container{ 
@@ -42,7 +45,7 @@ position: relative;
 #slide{
     h2{
         text-align: center;
-        color: #1976D2;
+        color: $secondary-text-color;
        
     }
     .inp{
@@ -57,7 +60,7 @@ position: relative;
         font-size: 1.1em;
         font-weight: 800;
         /* text-align: center; */
-        border-bottom: 2px solid #FFC107;
+        border-bottom: 2px solid $secondary-text-color;
         width: 18em;
         margin:25px 0 40px 30px;
         padding: 10px 0 10px 0;
@@ -70,7 +73,7 @@ position: relative;
         padding: 30px 0 0 0;
         font-size: 17px;
         font-weight: 650;
-        color: $accent-color;
+        color: #1976D2;
         pointer-events: none;
         transition: .3s;
     }
@@ -79,7 +82,7 @@ position: relative;
     .inp input:valid ~ label{
         top: -18px;
         left: 30px;
-        color: #1976D2;
+        color: $accent-color;
         font-size: 12px;
     }
 
@@ -117,7 +120,7 @@ position: relative;
     margin: -17.5px -10px 0 150px;    
     padding: 1em;
     h2{
-        color: #1976D2;
+        color: $secondary-text-color;
     }
     .inp{
         position: relative;
@@ -131,7 +134,7 @@ position: relative;
             font-size: 1.1em;
             font-weight: 800;
             /* text-align: center; */
-            border-bottom: 2px solid #FFC107;
+            border-bottom: 2px solid $secondary-text-color;
             width: 18em;
             margin:25px 0 40px 30px;
             padding: 10px 0 10px 0;
@@ -144,7 +147,7 @@ position: relative;
             padding: 30px 0 0 0;
             font-size: 17px;
             font-weight: 650;
-            color: $accent-color;
+            color: #1976D2;
             pointer-events: none;
             transition: .3s;
         }
@@ -153,7 +156,7 @@ position: relative;
         .inp input:valid ~ label{
             top: -18px;
             left: 30px;
-            color: #1976D2;
+            color: $accent-color;
             font-size: 12px;
         }
         .int input:hover{
@@ -167,24 +170,28 @@ position: relative;
  }
  .combo{
      margin: 50px 0 0 40px;
+     box-shadow: 2px 13px 8px rgba(grey,.2);
      .business{
         font-weight: 650;
         font-size: 1.1em;
+        color: $secondary-text-color;
      }
 
     .selects{
-        color: #FFC107;
+        color: $secondary-text-color;
         width: 12.3em;
         padding: 10px;
         border: none;
         font-weight: 650;
         font-size: 1.1em;
+        
 
         // margin-left: 30px;
     }
     option{
         font-weight: 650;
         font-size: 1.3em; 
+        color: $accent-color;
     }
  }
 
