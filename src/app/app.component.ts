@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 import { markDirty } from '@angular/core/src/render3';
 import { $ } from 'protractor';
-
+import {Popup} from 'ng2-opd-popup';
+import { from } from 'rxjs';
+import { constructDependencies } from '@angular/core/src/di/reflective_provider';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,6 +12,15 @@ import { $ } from 'protractor';
 
 export class AppComponent {
   title = 'app';
+
+  constructor(private popup:Popup){}
+
+
+  showPopup(){
+    this.popup.show();
+    console.log('pop');
+      
+  }
 }
 
 

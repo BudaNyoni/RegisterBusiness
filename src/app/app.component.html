@@ -1,21 +1,39 @@
-<!-- 
+
 <nav class="navb">
-  <a routerLink="/app" routerLinkActive="active">Home/App</a>
-  <a routerLink="/nextpage" routerLinkActive="active">NextPage</a>
+    <div class="logo">
+        <img src="../assets/log.png" alt="">
+        <i><h1>GasRadar</h1></i>
+      </div>
+  <!-- <a routerLink="/app" >Home/App</a> -->
+  <a routerLink="/nextpage">NextPage</a>
+   <a routerLink="/editbusinessprofile" >EditBusinessProfilePage</a>
+  <a routerLink="/products">ProductsPage</a>
 </nav>
-<router-outlet></router-outlet> -->
+<router-outlet>
+
+</router-outlet>
 
 <body>
+<!-- 
+  <popup class="POP">
+    <div class="popUp">
+        <img src="../assets/log.png" alt="">
+      welcome sbuda to the pop up show!
+    </div>
 
+  </popup> -->
 
-  <div class="navb">
+ <!-- <div class="butts">
+      <button class="btn" type="submit" (click) = "showPopup()">Next</button>
+    </div> -->
+  <!-- <div class="navb">
     <div class="logo">
     <img src="../assets/log.png" alt="">
     <i><h1>GasRadar</h1></i>
   </div>
-  </div>
+  </div> -->
 
-<div class="main">
+<!-- <div class="main">
   <div class="container">
 
     <div class="left">
@@ -24,15 +42,15 @@
           </div>
    <i><h1>GasRadar</h1></i>
    
-    <!-- <input type="text" placeholder="Business Name"> -->
+
     </div>
 
 
 
     <div class="slider">
-   
+        <h2>Business Details</h2>
 <div id="slide">
-    <h2>Business Details</h2>
+    
   <div class="inp">
     <input type="text" required=""> 
     <label for="">Business Name</label>
@@ -54,13 +72,23 @@
       <input type="text" required="" >
       <label for="">Business Tel</label>
   </div>
- 
+  <div class="combo">
+      <label class="business" for="business">Shop Type: </label>
+      <select class="selects" value="none" placeholder="business" >
+          <option value="spaza">Spaza</option>
+          <option value="supermarket">Supermarket</option>
+          <option value="garage">Garage</option>
+        </select>
+      </div>
+  
 </div>
    
-    </div>
+    </div> -->
+    
+
     
     
-      <div id="slide1">
+      <!-- <div id="slide1">
           <h2>Products</h2>
           <div class="inp">
           <input type="text" required="">
@@ -87,12 +115,18 @@
               <option value="garage">Garage</option>
             </select>
           </div>
-      </div>
+      </div> -->
      
-  </div>
-  <div class="butts">
-      <button class="btn" type="submit">Next</button>
-    </div>
-</div>
+  <!-- </div>
+
+
+ 
+</div> -->
+
+
+
+
+
+
 </body>
 
